@@ -16,6 +16,9 @@ const users =['hari', 'shyam', 'hari']
 //remove from array if duplicate
 
 
+ 
+
+
 
 
 // const newArr = [[4,5], [5,7], [7,2]]
@@ -31,4 +34,47 @@ for (const innerArr of newArr) {
   }
 }
 
-console.log(sum); // Output: 17
+console.log(sum); 
+
+// const myDetails = [
+//   {id:3, name: 'hari'},
+//   {id:5, name: 'shyam'},
+//   {id:6, name: 'gopal'},
+// ]
+
+// return only array of ids: expected output  [3,5,6]
+const myDetails = [
+  {id:3, name: 'hari'},
+  {id:5, name: 'shyam'},
+  {id:6, name: 'gopal'},
+]
+newArr=[]
+// return only array of ids: expected output  [3,5,6]
+for(i=0;i<myDetails.length;i++){
+newArr.push(myDetails[i].id)
+}
+console.log(newArr)
+
+const userDetails= [
+  {score: 0, name:'hari', marks: [10,3,23]},
+  {score: 0, name:'shyam', marks: [50,23,23]},
+  {score: 0, name:'shyam',marks: [20,13,43]},
+]
+//loop over the arr of objects and calculate total score, expected output is:
+
+// [
+//     {score: 36, name:'hari', marks: [10,3,23]},
+//     {score: 96, name:'shyam', marks: [50,23,23]},
+//     {score: 76, name:'shyam',marks: [20,13,43]},
+// ]
+for (i=0; i<userDetails.length;i++){
+  let score=0
+  a=userDetails[i].marks
+  for(j=0;j<a.length;j++){
+    
+    score=score+a[j]
+    userDetails[i].score=score
+  }
+  
+}
+userDetails
