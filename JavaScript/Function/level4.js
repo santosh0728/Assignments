@@ -22,3 +22,23 @@ function totalPrice(distance1,Price){
 }
 
 totalPrice(distance1,Price)
+
+
+//Q2 write a js function that checks if the object has status success or not
+//should return true or false
+
+const status1 ={
+    status: 'onTheWay'
+}
+const status2 ={
+    status: 'success'
+}
+const checkIfSucces=(obj)=>{
+//write your code here
+   return obj.status === 'success';
+  
+}
+
+checkIfSucces(status1)  //should return false
+
+checkIfSucces(status2)  //should return true
