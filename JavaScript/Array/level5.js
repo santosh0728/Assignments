@@ -15,7 +15,9 @@ const users =['hari', 'shyam', 'hari']
 //hint2: how to remove particular index/item
 //remove from array if duplicate
 
+const removeDupe = [...new Set(users)];
 
+console.log(removeDupe)
  
 
 
