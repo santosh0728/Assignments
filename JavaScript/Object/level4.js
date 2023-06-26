@@ -13,9 +13,11 @@ for(item in obj){
 totalSubjects=Object. keys(obj).length
 
 let percentage= sum/totalMarks*100
-percentage
+console.log(percentage)
+//
 a=percentage.toFixed(2)
 percentageObtained=parseFloat(a)
 
+//pushing key and value to object
 obj.percentageObtained=percentageObtained
 obj
