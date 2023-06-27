@@ -21,3 +21,47 @@ percentageObtained=parseFloat(a)
 //pushing key and value to object
 obj.percentageObtained=percentageObtained
 obj
+
+
+
+
+const userDetails={
+    name: "kaylin",
+    maths: 23,
+    science: 35,
+    gk:30
+}
+
+// {
+//     userName: 'kaylin',
+//     subjectCodes: ['M','S', 'G'],
+//     subjectScores: [23,35,30]
+// }
+a=Object.keys(userDetails)
+let subjects=[]
+let subjectScores=[]
+a.map((item)=>{
+  if (item !='name')
+    subjects.push(item[0])
+  return(item[0])
+  
+})
+b=Object.values(userDetails)
+b.map((item)=>{
+      if (item!='kaylin')
+        subjectScores.push(item)
+  return(item)
+      })
+subjectScores
+
+const newObj={
+  userName:userDetails.name
+  
+ 
+}
+newObj.subjectCodes=subjects
+newObj.subjectScores=subjectScores
+console.log(newObj)
+
+
+
