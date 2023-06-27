@@ -16,13 +16,8 @@ const users =['hari', 'shyam', 'hari']
 //remove from array if duplicate
 
 const removeDupe = [...new Set(users)];
-
 console.log(removeDupe)
  
-
-
-
-
 // const newArr = [[4,5], [5,7], [7,2]]
 //calculate the sum of all the odd numbers inside this nested array
 const newArr = [[4, 5], [5, 7], [7, 2]];
